@@ -160,7 +160,7 @@ export class RestAPIStack extends cdk.Stack {
 
     const awardsEndpoint = api.root.addResource("awards")
     const awardEndpoint = awardsEndpoint.addResource("{awardBody}")
-    const awardMovieEndpoint = awardEndpoint.addResource("movie")
+    const awardMovieEndpoint = awardEndpoint.addResource("movies")
     const awardMovieId = awardMovieEndpoint.addResource("{movideId}")
 
     movieEndpoint.addMethod(
