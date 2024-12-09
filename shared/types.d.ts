@@ -29,6 +29,13 @@ export type Movie = {
     cast?: boolean;
   }
 
+  export type AwardsQueryParams = {
+      movieId?: number;
+      awardBody?: string;
+      numAwards?: number;
+      awardDescription?: string;
+    }
+
   export type MovieAward = {
     movieId: number;
     awardBody: string;
